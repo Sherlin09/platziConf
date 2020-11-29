@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -26,12 +27,12 @@
                 android:id="@+id/tvItemScheduleAMPM"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A.M."
+                android:text="AM"
                 android:gravity="right|top"
-                android:textSize="20sp"
-                android:textColor="@color/colorPrimary" />
-        </LinearLayout>
+                android:textSize="@dimen/itemScheduleSubtitulo"
+                android:textColor="@color/colorPrimary"/>
 
+        </LinearLayout>
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -42,7 +43,7 @@
                 android:id="@+id/tvItemScheduleConferenceName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nombre de la conferencia"
+                android:text="nombre de la conferencia"
                 android:textSize="20sp"
                 android:textColor="@color/colorPrimaryDark"
                 android:ellipsize="end"
@@ -60,13 +61,16 @@
                 android:id="@+id/tvItemScheduleTag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tag"
+                android:text="Type"
                 android:ellipsize="end"
                 android:lines="1"
                 android:textColor="#FFFFFF"
                 android:background="@drawable/shape_topico"/>
-
-
-        </LinearLayout>
+           </LinearLayout>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
 </LinearLayout>

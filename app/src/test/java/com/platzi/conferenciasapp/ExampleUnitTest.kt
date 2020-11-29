@@ -1,4 +1,4 @@
-package com.platzi.conf
+package com.platzi.conferenciasapp
 
 import org.junit.Test
 
